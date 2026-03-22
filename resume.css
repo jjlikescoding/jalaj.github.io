@@ -1,0 +1,252 @@
+
+
+/* ── Reset ── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Body ── */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px 16px;
+}
+
+/* =============================================
+   OUTER CARD
+============================================= */
+.resume {
+  width: 750px;
+  background: #f7eded;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0,0,0,.18);
+  position: relative;
+}
+
+/* =============================================
+   HERO — photo cell LEFT, name + date RIGHT
+============================================= */
+.hero {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  background: #f7eded;
+  position: relative;
+}
+
+.hero-photo-cell {
+  background: #dbbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+}
+
+.hero img.photo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f7eded;
+  box-shadow: 0 3px 10px rgba(0,0,0,.20);
+  display: block;
+}
+
+.hero-name-cell {
+  padding: 20px 16px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #2b1a1a;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+/* Date stamp — top-right corner */
+.date-stamp {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 0.63rem;
+  color: #7a5555;
+  font-weight: 400;
+}
+
+/* =============================================
+   TWO-COLUMN BODY
+   Must match hero grid-template-columns
+============================================= */
+.body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+/* 
+   LEFT SIDEBAR
+============================================= */
+.sidebar {
+  background: #dbbdbd;
+  padding: 18px 13px;
+}
+
+.sb-section {
+  margin-bottom: 18px;
+}
+
+.sb-heading {
+  font-size: 0.70rem;
+  font-weight: 700;
+  color: #5c2a2a;
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+  line-height: 1.35;
+}
+
+/* ── Contact rows ── */
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #c4a0a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.58rem;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.contact-info {
+  font-size: 0.60rem;
+  color: #3d2020;
+  line-height: 1.4;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.contact-info strong {
+  font-weight: 600;
+  margin-right: 3px;
+}
+
+.contact-info span {
+  color: #5a3535;
+}
+
+/* ── Languages list ── */
+ul.sb-list {
+  list-style: disc;
+  padding-left: 13px;
+}
+
+ul.sb-list li {
+  font-size: 0.63rem;
+  color: #3d2020;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+/* ── Extra curricular ── */
+.sb-extra p {
+  font-size: 0.62rem;
+  color: #3d2020;
+  line-height: 1.55;
+  margin-bottom: 7px;
+}
+
+/* =============================================
+   RIGHT MAIN CONTENT
+============================================= */
+.main {
+  background: #fff8f8;
+  padding: 16px 18px;
+}
+
+/* ── Section heading bars ── */
+.section-bar {
+  background: #c9a0a0;
+  border-radius: 3px;
+  padding: 4px 10px;
+  margin-bottom: 8px;
+  margin-top: 13px;
+}
+
+.section-bar:first-child {
+  margin-top: 0;
+}
+
+.section-bar h2 {
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: #2b1a1a;
+  letter-spacing: 0.2px;
+}
+
+/* ── Bullet lists (objectives & hobbies) ── */
+ul.main-list {
+  list-style: disc;
+  padding-left: 15px;
+  margin-bottom: 4px;
+}
+
+ul.main-list li {
+  font-size: 0.65rem;
+  color: #2b1a1a;
+  line-height: 1.65;
+  margin-bottom: 3px;
+}
+
+/* ── Education blocks ── */
+.edu-block {
+  margin-bottom: 9px;
+}
+
+.edu-block h3 {
+  font-size: 0.70rem;
+  font-weight: 700;
+  color: #2b1a1a;
+  margin-bottom: 2px;
+}
+
+.edu-block p {
+  font-size: 0.63rem;
+  color: #3d2020;
+  line-height: 1.6;
+}
+
+/* ── Skill blocks ── */
+.skill-block {
+  margin-bottom: 8px;
+}
+
+.skill-block h3 {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #2b1a1a;
+  margin-bottom: 1px;
+}
+
+.skill-block p {
+  font-size: 0.63rem;
+  color: #3d2020;
+  line-height: 1.6;
+}
